@@ -40,7 +40,9 @@ A java version which assumes its input is sorted.
 
 This assumption allows it to run in O(N) with a spatial complexity of O(1).
 
-Use this version for very very large files (millions of entries)
+Use this version if you don't want to use a shell script or for very very 
+large files (millions of entries) where the JVM startup cost would be offset
+by the faster algorithm.
 
 ### java-hashmap
 A java version which works even if its input is not sorted.
