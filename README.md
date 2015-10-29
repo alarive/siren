@@ -18,8 +18,10 @@ cd [program]
 ```
 
 For example:
+```
 cd bash
 ./run.sh < ../test/sirens_fxt.txt
+```
 
 ## PROGRAMS
 
