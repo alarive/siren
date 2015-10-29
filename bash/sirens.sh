@@ -19,6 +19,6 @@ BEGIN {
 { $1 == "1"?unique++:duplicated++ } 
 END { 
   print "Uniques: "unique
-  print "Doublonnés: " duplicated
+  print "Repetes: " duplicated
 }'
 

@@ -1,0 +1,2 @@
+Uniques: 77445
+Repetes: 2256
