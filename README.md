@@ -1,6 +1,6 @@
 # SIRENs
 
-Various programs to report duplicates in a list of SIREN number.
+Various programs to report duplicates in a list of SIREN numbers.
 
 A SIREN number is an administrative code that is used to identify french
 companies.
@@ -11,9 +11,9 @@ Run the tests with:
 ./run-tests.sh
 ```
 
-Run indivdual versions by doing:
+Run an indivudal program by doing:
 ```
-cd [version]
+cd [program]
 ./run.sh < ../test/sirens_fxt.txt
 ```
 
@@ -29,7 +29,7 @@ A bash script which uses sort, uniq and awk to do the job.
 You can remove the call to sort if the input is already sorted.
 
 Runtime complexity is the complexity of sort and uniq, i.e probably O(N log(N))
-in average.
+on average.
 
 Spatial complexity is again dependent of sort and uniq, so probably O(N).
 
