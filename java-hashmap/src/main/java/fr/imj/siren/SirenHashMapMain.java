@@ -8,7 +8,7 @@ import java.io.InputStream;
  * Created by alarive on 29/10/2015.
  */
 public class SirenHashMapMain {
-    private static final String USAGE = "Usage: ./sirens.sh [file]\n"+
+    private static final String USAGE = "Usage: fr.imj.siren.SirenHashMapMain [file]\n"+
         "  if no [file] parameter is given, reads from stdin";
 
     public static void main(String[] args) throws IOException {

@@ -8,7 +8,7 @@ import java.io.InputStream;
  * Created by alarive on 29/10/2015.
  */
 public class SirenArrayMain {
-    private static final String USAGE = "Usage: ./sirens.sh [file]\n"+
+    private static final String USAGE = "Usage: fr.imj.siren.SirenArrayMain [file]\n"+
         "  if no [file] parameter is given, reads from stdin";
 
     public static void main(String[] args) throws IOException {
