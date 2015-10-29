@@ -3,7 +3,7 @@
 #This script will test if all run.sh outputs match test/expected_output.txt
 #run.sh contract is simply to accept a siren list as its input and to output
 #in the same format as test/expected_output.txt
-TO_TEST="bash java-sorted"
+TO_TEST="bash java-sorted java-hashmap"
 
 for t in $TO_TEST; do
   echo "Testing \"$t...\""

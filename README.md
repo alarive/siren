@@ -31,9 +31,26 @@ You can remove the call to sort if the input is already sorted.
 Runtime complexity is the complexity of sort and uniq, i.e probably O(N log(N))
 on average.
 
-Spatial complexity is again dependent of sort and uniq, so probably O(N).
+Spatial complexity is again dependent of sort and uniq, so probably O(N). In
+real life it should be the fastest version in most cases since it does not 
+suffer from the JVM startup costs.
 
 ### java-sorted
 A java version which assumes its input is sorted.
 
 This assumption allows it to run in O(N) with a spatial complexity of O(1).
+
+Use this version for very very large files (millions of entries)
+
+### java-hashmap
+A java version which works even if its input is not sorted.
+
+It runs in O(N) with a spatial complexity of O(N)
+
+### java-array
+A java version which takes advantadge of the fact that SIREN numbers always
+have 9 digits. It runs in 0(N) with a spatial complexity of O(1).
+
+Prefer this version over the java-hashmap version only for very very large inputs
+as the spatial complexity hides the fact that the constant is very large
+(it uses a 10^10 int array)
