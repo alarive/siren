@@ -53,4 +53,4 @@ have 9 digits. It runs in 0(N) with a spatial complexity of O(1).
 
 Prefer this version over the java-hashmap version only for very very large inputs
 as the spatial complexity hides the fact that the constant is very large
-(it uses a 10^10 int array)
+(it uses a 10^10 byte array)
