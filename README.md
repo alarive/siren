@@ -51,8 +51,9 @@ It runs in O(N) with a spatial complexity of O(N)
 
 ### java-array
 A java version which takes advantadge of the fact that SIREN numbers always
-have 9 digits. It runs in 0(N) with a spatial complexity of O(1).
+have 9 digits. It runs in 0(N) with a spatial complexity of O(1) but....
 
-Prefer this version over the java-hashmap version only for very very large inputs
-as the spatial complexity hides the fact that the constant is very large
-(it uses a 10^10 byte array)
+the spatial complexity constant is unusually large: it uses a 10^9 byte 
+array and does not run with Xmx < 1500m :) So in real life it is very unlikely
+that you would ever need this (and it may not work at all on some machines, so
+don't be surprised !)
