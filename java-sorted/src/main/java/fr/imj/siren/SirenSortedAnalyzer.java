@@ -55,6 +55,9 @@ public class SirenSortedAnalyzer {
             }
             previousSiren = currentSiren;
         }
+        if (!alreadyCounted) {
+            sirenAnalyzerResult.incrementUniqueCount();
+        }
         return sirenAnalyzerResult;
     }
 }
